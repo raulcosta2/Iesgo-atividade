@@ -1,1 +1,14 @@
+import random
+numero_aleatorio = random.randint(1, 10)
 
+while True:
+    advinhar_numero = int(input("Insina um numero de 1 a 10 "))
+    if advinhar_numero < 1 or advinhar_numero > 10:
+        print("\n\tInsira um numero Valido! ")
+        continue
+    break
+
+if advinhar_numero == numero_aleatorio:
+    print("\n\t Você acertou!\n")
+else:
+    print("\n\t Você errou! \n")
